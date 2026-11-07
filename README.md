@@ -1,316 +1,186 @@
-GRANTLY — Unified Scholarship Discovery & Management Platform
+
+# GRANTLY — Unified Scholarship Discovery & Management Platform
 
 <p align="center">
-<strong>Find Opportunities. Unlock Your Future.</strong>
+  <strong>Find Opportunities. Unlock Your Future.</strong>
 </p>
 
 <p align="center">
-A smarter way to discover scholarships, understand eligibility, organize applications, and manage educational funding opportunities.
+  A unified student platform for discovering scholarships, checking eligibility, managing applications, and organizing educational funding opportunities.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
-<img src="https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
 </p>
 
-Overview
+---
 
-GRANTLY is a modern scholarship discovery and management platform designed to simplify the educational funding journey for students.
+## Overview
 
-Finding relevant scholarships, understanding eligibility requirements, organizing application documents, and keeping track of deadlines can be complicated.
+GRANTLY is a modern scholarship discovery and management application designed to simplify the educational funding journey.
 
-GRANTLY brings these activities together in one organized workspace, helping students discover opportunities, evaluate eligibility, manage applications, and stay informed about important deadlines.
+It brings scholarship exploration, eligibility assessment, application tracking, document management, and deadline organization together in one intuitive workspace.
 
-The platform combines scholarship discovery, personalized eligibility matching, application tracking, document organization, deadline management, and meaningful insights into one cohesive student experience.
+## Features
 
-Key Features
-01. Student Dashboard
-Personalized student workspace.
-Scholarship and application summaries.
-Saved opportunities overview.
-Upcoming application deadlines.
-Application progress visualization.
-Recent activity and quick actions.
-02. Scholarship Discovery
-Search scholarships by name and keywords.
-Filter by academic level and funding type.
-Explore merit-based and need-based opportunities.
-Filter by location and eligibility requirements.
-Sort by award amount and application deadline.
-Save scholarships for future reference.
-03. Scholarship Details
-Comprehensive scholarship information.
-Funding amount and benefits.
-Academic eligibility requirements.
-Income and other eligibility criteria.
-Required document information.
-Application instructions.
-Official source links and deadline information.
-04. Smart Eligibility Matcher
-Match scholarship requirements against student information.
-Identify eligible opportunities.
-Highlight potentially eligible opportunities.
-Explain unmet eligibility requirements.
-Identify missing profile information.
-Provide relevant scholarship recommendations.
-05. Scholarship Comparison
-Compare multiple scholarships.
-Review award amounts and benefits.
-Compare academic requirements.
-Evaluate eligibility criteria.
-Review application deadlines.
-Make informed funding decisions.
-06. Application Management
-Organize scholarship applications.
-Track application progress.
-Update application statuses.
-Maintain application notes.
-Record submission dates and reference numbers.
-View application history.
+- **Dashboard:** Personalized overview of scholarships, applications, upcoming deadlines, and recent activities.
+- **Scholarship Discovery:** Search, filter, sort, explore, and save scholarship opportunities.
+- **Scholarship Details:** Review funding amounts, eligibility requirements, benefits, deadlines, and application instructions.
+- **Eligibility Matcher:** Evaluate scholarship requirements against student profile information.
+- **Scholarship Comparison:** Compare funding amounts, benefits, eligibility criteria, and deadlines.
+- **Application Management:** Organize applications, update statuses, and track application progress.
+- **Document Vault:** Upload, preview, download, categorize, and manage application documents.
+- **Deadline Calendar:** Track scholarship deadlines and application milestones.
+- **Notification Center:** Manage application updates, reminders, and deadline notifications.
+- **Insights & Analytics:** Visualize application progress and scholarship activity.
+- **Student Profile:** Maintain personal, academic, and eligibility-related information.
+- **Settings:** Manage application preferences and locally stored data.
 
-Supported application statuses:
+## Technology Stack
 
-Status	Description
-Interested	Opportunity saved for consideration
-Preparing	Application preparation in progress
-Ready to Apply	Documents and information prepared
-Submitted	Application submitted
-Under Review	Application awaiting a decision
-Approved	Application approved
-Rejected	Application unsuccessful
-Withdrawn	Application withdrawn
-07. Document Vault
-Organize academic and personal documents.
-Upload PDF files and supported images.
-Preview and download documents.
-Rename and categorize files.
-Remove unnecessary documents.
-Maintain an organized document collection.
-08. Deadline Calendar
-Interactive monthly calendar.
-Scholarship deadline tracking.
-Personal application reminders.
-Upcoming deadline identification.
-Application milestone management.
-09. Notification Center
-Upcoming deadline notifications.
-Application-related reminders.
-Missing document alerts.
-Application activity updates.
-Read and unread notification management.
-10. Insights & Analytics
-Application status visualization.
-Scholarship activity overview.
-Potential funding opportunity analysis.
-Application progress charts.
-Deadline insights.
-11. Student Profile
-Personal information management.
-Academic details.
-Educational institution information.
-Income and eligibility preferences.
-Profile completion tracking.
-12. Settings & Data Management
-Application preferences.
-Theme settings where supported.
-Data export.
-Local data management.
-Privacy-related settings.
-Technology Stack
-Technology	Purpose
-React	Frontend application
-TypeScript	Type safety
-Vite	Development and build tooling
-Tailwind CSS	User interface styling
-React Router DOM	Application navigation
-Zustand	State management
-React Hook Form	Form management
-Zod	Schema validation
-Lucide React	Interface icons
-Recharts	Data visualization
-LocalStorage	Persistent application data
-IndexedDB	Local document storage
-Vercel	Production deployment
-Application Architecture
+| Technology | Purpose |
+|---|---|
+| React | Frontend development |
+| TypeScript | Type safety |
+| Vite | Development and build tooling |
+| Tailwind CSS | Interface styling |
+| React Router DOM | Application navigation |
+| Zustand | State management |
+| React Hook Form | Form management |
+| Zod | Schema validation |
+| Lucide React | Interface icons |
+| Recharts | Data visualization |
+| LocalStorage | Persistent application data |
+| IndexedDB | Local document storage |
 
-GRANTLY follows a frontend-focused architecture with browser-based data persistence.
+## Application Architecture
 
-Data Management
-LocalStorage: Maintains student profile information, preferences, saved scholarships, application records, and supported application state.
-IndexedDB: Stores uploaded documents locally in the browser.
-Zustand: Manages shared application state.
-React Components: Provide reusable and maintainable interface elements.
-TypeScript: Provides structured data models and type safety.
+GRANTLY follows a modular frontend architecture focused on reusable components, maintainable code, and organized application logic.
 
-The core application does not require a dedicated backend server or external API.
+- React components provide reusable interface elements.
+- TypeScript provides structured data models.
+- Zustand manages shared application state.
+- LocalStorage maintains supported application information.
+- IndexedDB stores uploaded documents locally.
+- Utility modules handle eligibility calculations, formatting, and data operations.
 
-Data and Privacy
-Student information is maintained locally.
-Uploaded documents are stored using IndexedDB.
-Application records persist in browser storage.
-Data is not automatically synchronized across devices or accounts.
-Clearing browser storage may remove locally stored information.
+The core application is designed to function without a dedicated backend server or external API.
 
-Scholarship information should always be checked against the relevant official provider before applying, as eligibility requirements and deadlines may change.
+## Getting Started
 
-Getting Started
+### Prerequisites
 
-Follow these steps to run GRANTLY locally.
+- Node.js (LTS recommended)
+- npm
+- Git
 
-Prerequisites
+### Installation
 
-Make sure you have installed:
+**1. Clone the repository**
 
-Node.js (LTS recommended)
-npm
-Git
-1. Clone the Repository
-bash
+```bash
 git clone https://github.com/Sreevalli20/outlook.git
+```
 
-2. Navigate to the Project
-bash
+**2. Navigate to the project directory**
+
+```bash
 cd outlook
+```
 
-3. Install Dependencies
-bash
+**3. Install dependencies**
+
+```bash
 npm install
+```
 
-4. Start the Development Server
-bash
+**4. Start the development server**
+
+```bash
 npm run dev
+```
 
+**5. Create a production build**
 
-Open the local URL displayed in your terminal to access the application.
-
-5. Create a Production Build
-bash
+```bash
 npm run build
+```
 
-6. Preview the Production Build
-bash
+**6. Preview the production build**
+
+```bash
 npm run preview
+```
 
-Project Structure
+## Project Structure
 
-The following represents the intended high-level organization of the application. Refer to the repository for the exact implemented structure.
-
-text
-GRANTLY/
-│
+```text
+outlook/
 ├── public/
-│   └── assets/
-│
 ├── src/
-│   ├── assets/
-│   │
 │   ├── components/
-│   │   ├── common/
-│   │   ├── layout/
-│   │   ├── dashboard/
-│   │   ├── scholarships/
 │   │   ├── applications/
-│   │   └── forms/
-│   │
-│   ├── pages/
-│   │   ├── Dashboard/
-│   │   ├── Scholarships/
-│   │   ├── Eligibility/
-│   │   ├── Applications/
-│   │   ├── Documents/
-│   │   ├── Calendar/
-│   │   ├── Notifications/
-│   │   ├── Insights/
-│   │   ├── Profile/
-│   │   └── Settings/
-│   │
-│   ├── store/
-│   ├── hooks/
-│   ├── services/
+│   │   ├── common/
+│   │   ├── documents/
+│   │   ├── layout/
+│   │   └── scholarships/
 │   ├── data/
+│   ├── pages/
+│   ├── store/
 │   ├── types/
 │   ├── utils/
-│   ├── schemas/
-│   │
 │   ├── App.tsx
+│   ├── index.css
 │   └── main.tsx
-│
 ├── index.html
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
-├── README.md
-└── .gitignore
+└── README.md
+```
 
-Deployment
+## Data Storage & Privacy
 
-GRANTLY supports production deployment through Vercel.
+- Student information and application records are maintained using browser storage.
+- Uploaded documents are stored locally using IndexedDB.
+- Data is not automatically synchronized across devices.
+- Clearing browser storage may remove locally saved information.
+- Users should maintain backups of important documents.
+- Scholarship eligibility requirements and deadlines should be verified through official sources.
 
-Deploy Using Vercel CLI
+## Responsive Design
 
-Install the Vercel CLI:
+Designed to support:
 
-bash
-npm install -g vercel
+- Desktop computers
+- Laptops
+- Tablets
+- Mobile devices
 
+The interface focuses on usability, consistent navigation, accessible interactions, and responsive layouts.
 
-Authenticate:
+## Future Scope
 
-bash
-vercel login
+- Verified scholarship data integrations.
+- Secure cloud synchronization.
+- Multi-device access.
+- Enhanced scholarship recommendations.
+- Advanced application analytics.
+- Additional accessibility improvements.
 
+## License
 
-Deploy the production application:
+No license has been specified yet. An appropriate license should be added before permitting external reuse or redistribution.
 
-bash
-vercel --prod
-
-
-Follow the CLI instructions to link the existing Vercel project if necessary.
-
-After successful deployment, Vercel provides a publicly accessible HTTPS URL.
-
-Browser Compatibility
-
-Designed for modern web browsers:
-
-Google Chrome
-Mozilla Firefox
-Microsoft Edge
-Apple Safari
-
-The application is designed to support:
-
-Desktop
-Laptop
-Tablet
-Mobile devices
-Future Scope
-
-Potential areas for future development include:
-
-Verified scholarship data integrations.
-Secure cloud synchronization.
-Multi-device access.
-Application collaboration.
-Official scholarship provider integrations.
-Additional accessibility improvements.
-Advanced scholarship recommendation capabilities.
-License
-
-No license has been specified yet. Add an appropriate open-source license before permitting reuse or redistribution.
+---
 
 <p align="center">
-<strong>GRANTLY</strong>
-</p>
-
-<p align="center">
-Find Opportunities. Unlock Your Future.
-</p>
-
-<p align="center">
-Making scholarship discovery and application management simpler for students.
+  <strong>GRANTLY</strong>
+  <br />
+  Find Opportunities. Unlock Your Future.
+  <br />
+  Making scholarship discovery and application management simpler for students.
 </p>
